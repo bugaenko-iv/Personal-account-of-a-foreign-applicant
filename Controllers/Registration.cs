@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Личный_кабинет_иностранного_абитуриента.Models;
 
 namespace Личный_кабинет_иностранного_абитуриента.Controllers
 {
@@ -7,6 +8,12 @@ namespace Личный_кабинет_иностранного_абитурие�
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult ShowInfo(User user)
+        {
+            return View(user);
         }
     }
 }

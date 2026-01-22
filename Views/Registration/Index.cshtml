@@ -1,5 +1,8 @@
-﻿@{
-    ViewData["Title"] = "Регистрация";
-}
+﻿@model User
 
 <h1>Регистрация</h1>
+
+<form method="post" asp-controller="Registration" asp-action="ShowInfo">
+    <input type="text" asp-for="Name" placeholder="Введите ваше имя"><br><br>
+    <input type="submit" value="Отправить">
+</form>
