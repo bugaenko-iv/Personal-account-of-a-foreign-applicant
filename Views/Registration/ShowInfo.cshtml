@@ -1,3 +1,8 @@
 ﻿@model User
 
 <p>@Model.Name</p>
+<p>@Model.Surname</p>
+
+<form method="post" asp-controller="Registration" asp-action="Index">
+    <button>Вернуться к регистрации</button>
+</form>
