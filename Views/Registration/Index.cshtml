@@ -1,9 +1,9 @@
 ﻿@model User
 
-<h1>Регистрация</h1>
+<h1 class="TextRegistr">Регистрация</h1>
 
-<form method="post" asp-controller="Registration" asp-action="ShowInfo">
+<form class="Registration" method="post" asp-controller="Registration" asp-action="ShowInfo">
     <input type="text" asp-for="Name" placeholder="Введите ваше имя"><br><br>
     <input type="text" asp-for="Surname" placeholder="Введите вашу фамилию"><br><br>
-    <input type="submit" value="Отправить">
+    <input class="BtnRegistr" type="submit" value="Отправить">
 </form>

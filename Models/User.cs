@@ -4,6 +4,7 @@ namespace Личный_кабинет_иностранного_абитурие�
 {
     public class User
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
     }
